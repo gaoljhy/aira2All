@@ -44,8 +44,9 @@
 
 ## Usage
 
-请使用实际的路径替换以下命令中的 `/DOWNLOAD_DIR` 和 `CONFIG_DIR`，他们将容器中的下载目录和配置文件目录映射到你指定的主机路径上，以便于管理下载的文件和 Aria2 的配置。
+请使用实际的路径替换以下命令中的 `DOWNLOAD_DIR` 和 `CONFIG_DIR`，他们将容器中的下载目录和配置文件目录映射到你指定的主机路径上，以便于管理下载的文件和 Aria2 的配置。
 
+> 若使用存在问题，清理`CONFIG_DIR`下的session文件，并检查配置，`log`,之后重新启动容器
 
 
 ```sh
@@ -72,3 +73,5 @@ adminhub/aira2:latest
 
 + `http://localhost:80` 打开 web 管理界面
 + `http://localhost:8080` 浏览下载目录
+
+> 如果有更新版本提醒我更新，谢谢
