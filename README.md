@@ -51,7 +51,7 @@ sudo docker run -d \
 --name aria2 \
 -p 6800:6800 \
 -p 80:80 \
--p 22:8080 \
+-p 21:8080 \
 -v /DOWNLOAD_DIR:/data \
 -v /CONFIG_DIR:/config \
 -e SECRET=SECRET_CODE \
@@ -60,7 +60,7 @@ adminhub/aira2:latest
 
 
 > 6800 为 `aria2` 端口
-> 如果不需要浏览下载目录，则去掉 `-p 6888:8080` 参数。  
+> 如果不需要浏览下载目录，则去掉 `-p 21:8080` 参数。  
 
 > tips：请用随意的一组字符串替换 `SECRET_CODE`，在浏览器中管理 aria2 时需要用这个安全代码认证身份，以防他人恶意使用。  
 > 如果设置了`SECRET`，在启动完成之后需要在页面配置相应的参数  
@@ -68,4 +68,4 @@ adminhub/aira2:latest
 ### 浏览
 
 + `http://localhost:6880` 打开 web 管理界面
-+ `http://localhost:6888` 浏览下载目录
++ `http://localhost:21` 浏览下载目录
