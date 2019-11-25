@@ -3,7 +3,6 @@ FROM alpine:latest
 MAINTAINER wjg1101766085 <1101766085@qq.com>
 
 RUN apk update && \
-	apk add --no-cache --update bash && \
 	mkdir -p /config && \
 	mkdir -p /config-base && \
 	mkdir -p /data && \
