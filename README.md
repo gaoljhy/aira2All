@@ -69,5 +69,5 @@ adminhub/aira2:latest
 
 ### 浏览
 
-+ `http://localhost:6880` 打开 web 管理界面
++ `http://localhost:80` 打开 web 管理界面
 + `http://localhost:21` 浏览下载目录
