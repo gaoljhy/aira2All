@@ -54,8 +54,8 @@ sudo docker run -d \
 -p 6800:6800 \
 -p 80:80 \
 -p 21:8080 \
--v /DOWNLOAD_DIR:/data \
--v /CONFIG_DIR:/config \
+-v $(pwd)/DOWNLOAD_DIR:/data \
+-v $(pwd)/CONFIG_DIR:/config \
 -e SECRET=SECRET_CODE \
 adminhub/aira2:latest
 ```
